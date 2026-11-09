@@ -1,0 +1,10 @@
+<resources>
+    <color name="ui_background">#111113</color>
+    <color name="ui_surface">#202023</color>
+    <color name="ui_glass">#F2202023</color>
+    <color name="ui_text">#F5F5F7</color>
+    <color name="ui_secondary">#B0B0B8</color>
+    <color name="ui_border">#39393F</color>
+    <color name="ui_danger">#FFB4AB</color>
+    <color name="ui_warning">#F2B866</color>
+</resources>

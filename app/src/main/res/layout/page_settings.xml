@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/back"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/settings_title"
+            android:textAppearance="@style/TextAppearance.TimeAssistant.PageTitle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/settingsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/settingsBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="40dp">
+
+            <!-- Appearance: theme swatches; segmented controls and tutorial are appended at runtime. -->
+            <LinearLayout
+                android:id="@+id/themeSettingsCard"
+                style="@style/Widget.TimeAssistant.SettingsCard"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.TimeAssistant.SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/settings_theme_title" />
+
+                <LinearLayout
+                    style="@style/Widget.TimeAssistant.Group"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_theme_subtitle"
+                        android:textAppearance="@style/TextAppearance.TimeAssistant.Caption" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/themeNeutralOption"
+                            style="@style/Widget.TimeAssistant.ThemeSwatch">
+
+                            <FrameLayout style="@style/Widget.TimeAssistant.ThemeSwatchDot">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/swatch_neutral" />
+
+                                <ImageView style="@style/Widget.TimeAssistant.ThemeSwatchCheck" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/Widget.TimeAssistant.ThemeSwatchLabel"
+                                android:text="@string/theme_neutral" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/themeVioletOption"
+                            style="@style/Widget.TimeAssistant.ThemeSwatch"
+                            android:layout_marginStart="6dp">
+
+                            <FrameLayout style="@style/Widget.TimeAssistant.ThemeSwatchDot">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/swatch_violet" />
+
+                                <ImageView style="@style/Widget.TimeAssistant.ThemeSwatchCheck" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/Widget.TimeAssistant.ThemeSwatchLabel"
+                                android:text="@string/theme_violet" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/themeOceanOption"
+                            style="@style/Widget.TimeAssistant.ThemeSwatch"
+                            android:layout_marginStart="6dp">
+
+                            <FrameLayout style="@style/Widget.TimeAssistant.ThemeSwatchDot">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/swatch_ocean" />
+
+                                <ImageView style="@style/Widget.TimeAssistant.ThemeSwatchCheck" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/Widget.TimeAssistant.ThemeSwatchLabel"
+                                android:text="@string/theme_ocean" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/themeForestOption"
+                            style="@style/Widget.TimeAssistant.ThemeSwatch"
+                            android:layout_marginStart="6dp">
+
+                            <FrameLayout style="@style/Widget.TimeAssistant.ThemeSwatchDot">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/swatch_forest" />
+
+                                <ImageView style="@style/Widget.TimeAssistant.ThemeSwatchCheck" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/Widget.TimeAssistant.ThemeSwatchLabel"
+                                android:text="@string/theme_forest" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/themeClayOption"
+                            style="@style/Widget.TimeAssistant.ThemeSwatch"
+                            android:layout_marginStart="6dp">
+
+                            <FrameLayout style="@style/Widget.TimeAssistant.ThemeSwatchDot">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/swatch_clay" />
+
+                                <ImageView style="@style/Widget.TimeAssistant.ThemeSwatchCheck" />
+                            </FrameLayout>
+
+                            <TextView
+                                style="@style/Widget.TimeAssistant.ThemeSwatchLabel"
+                                android:text="@string/theme_clay" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aiSettingsCard"
+                style="@style/Widget.TimeAssistant.SettingsCard"
+                android:orientation="vertical" />
+
+            <!-- Scheduling preferences -->
+            <LinearLayout
+                android:id="@+id/timeSettingsCard"
+                style="@style/Widget.TimeAssistant.SettingsCard"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.TimeAssistant.SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/settings_time_title" />
+
+                <LinearLayout
+                    style="@style/Widget.TimeAssistant.Group"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_time_subtitle"
+                        android:textAppearance="@style/TextAppearance.TimeAssistant.Caption" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.TimeAssistant.FieldLabel"
+                                android:labelFor="@id/availableStartInput"
+                                android:text="@string/hint_available_start" />
+
+                            <EditText
+                                android:id="@+id/availableStartInput"
+                                style="@style/Widget.TimeAssistant.Input.Time"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:hint="@string/hint_clock" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.TimeAssistant.FieldLabel"
+                                android:labelFor="@id/availableEndInput"
+                                android:text="@string/hint_available_end" />
+
+                            <EditText
+                                android:id="@+id/availableEndInput"
+                                style="@style/Widget.TimeAssistant.Input.Time"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:hint="@string/hint_clock" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.TimeAssistant.FieldLabel"
+                                android:labelFor="@id/workStartInput"
+                                android:text="@string/hint_work_start" />
+
+                            <EditText
+                                android:id="@+id/workStartInput"
+                                style="@style/Widget.TimeAssistant.Input.Time"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:hint="@string/hint_clock" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.TimeAssistant.FieldLabel"
+                                android:labelFor="@id/workEndInput"
+                                android:text="@string/hint_work_end" />
+
+                            <EditText
+                                android:id="@+id/workEndInput"
+                                style="@style/Widget.TimeAssistant.Input.Time"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:hint="@string/hint_clock" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextAppearance.TimeAssistant.FieldLabel"
+                        android:layout_marginTop="12dp"
+                        android:labelFor="@id/blockedRangesInput"
+                        android:text="@string/label_blocked_ranges" />
+
+                    <EditText
+                        android:id="@+id/blockedRangesInput"
+                        style="@style/Widget.TimeAssistant.Input"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/hint_blocked_ranges"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/helper_blocked_ranges"
+                        android:textAppearance="@style/TextAppearance.TimeAssistant.Caption" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/allowMoveSwitch"
+                        style="@style/Widget.TimeAssistant.Switch"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/settings_allow_ai_move" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notificationSettingsCard"
+                style="@style/Widget.TimeAssistant.SettingsCard"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.TimeAssistant.SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_notifications_title" />
+
+                <LinearLayout
+                    android:id="@+id/notificationGroup"
+                    style="@style/Widget.TimeAssistant.Group"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_notifications_subtitle"
+                        android:textAppearance="@style/TextAppearance.TimeAssistant.Caption" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/scheduleReminderSwitch"
+                        style="@style/Widget.TimeAssistant.Switch"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/settings_schedule_reminder" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/deadlineReminderSwitch"
+                        style="@style/Widget.TimeAssistant.Switch"
+                        android:text="@string/settings_deadline_reminder" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/overdueReminderSwitch"
+                        style="@style/Widget.TimeAssistant.Switch"
+                        android:text="@string/settings_overdue_reminder" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/reviewReminderSwitch"
+                        style="@style/Widget.TimeAssistant.Switch"
+                        android:text="@string/settings_review_reminder" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dynamicSettingsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/proactiveSettingsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/preferenceIntelligenceContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/connectionSettingsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sticky save bar; visible only in the scheduling preferences section. -->
+    <LinearLayout
+        android:id="@+id/preferenceSaveBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/savePreferencesButton"
+            style="@style/Widget.TimeAssistant.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/settings_save_preferences" />
+    </LinearLayout>
+</LinearLayout>

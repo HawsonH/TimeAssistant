@@ -1,0 +1,21 @@
+<resources>
+    <string name="tutorial_title">认识时屿</string>
+    <string name="tutorial_existing_user_hint">新增新手教程，可在设置的外观页重新体验</string>
+    <string name="tutorial_skip">跳过教程</string>
+    <string name="tutorial_next">下一步</string>
+    <string name="tutorial_done">开始使用</string>
+    <string name="tutorial_progress">第 %1$d 步，共 %2$d 步</string>
+    <string name="tutorial_schedule_title">从一件事开始</string>
+    <string name="tutorial_schedule_body">在安排页添加待办或日程。浏览其他日期时，新建事项会带入该日期；任务旁的操作可以完成事项或打开编辑。</string>
+    <string name="tutorial_focus_title">留一段完整的注意力</string>
+    <string name="tutorial_focus_body">在专注页选择专注、短休或长休，也可以关联任务。结束记录和取消本轮不同：取消不会计入专注记录。</string>
+    <string name="tutorial_ai_title">由你确认每一次变化</string>
+    <string name="tutorial_ai_body">AI 给出的是待确认方案，不会自动修改任务。不配置 AI 也能使用安排和专注；学习与主动整理需要分别选择开启。</string>
+    <string name="guide_schedule_title">添加到当前日期</string>
+    <string name="guide_schedule_body">使用加号创建事项。保存前可以确认日期、具体时间和重复范围。</string>
+    <string name="guide_focus_title">选择当前阶段</string>
+    <string name="guide_focus_body">这里可以切换专注、短休和长休。运行中的会话需要先结束或取消，才能更换阶段。</string>
+    <string name="guide_chat_title">先提案，再确认</string>
+    <string name="guide_chat_body">输入想记录或安排的事情。AI 返回的修改需要你确认后才会执行。</string>
+    <string name="guide_dismiss">知道了</string>
+</resources>

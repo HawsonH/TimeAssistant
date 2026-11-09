@@ -1,0 +1,18 @@
+<resources>
+    <color name="ui_background">#F5F5F7</color>
+    <color name="ui_surface">#FFFFFF</color>
+    <color name="ui_glass">#F2FFFFFF</color>
+    <color name="ui_text">#202124</color>
+    <color name="ui_secondary">#62646B</color>
+    <color name="ui_border">#E2E3E7</color>
+    <color name="ui_danger">#B43D3D</color>
+    <color name="ui_warning">#A15C00</color>
+    <dimen name="ui_page_padding">20dp</dimen>
+    <dimen name="ui_radius_block">12dp</dimen>
+    <dimen name="ui_radius_input">12dp</dimen>
+    <dimen name="ui_radius_action">12dp</dimen>
+    <dimen name="ui_radius_overlay">12dp</dimen>
+    <dimen name="ui_radius_pill">999dp</dimen>
+    <dimen name="ui_radius_tag">6dp</dimen>
+    <dimen name="ui_touch_target">48dp</dimen>
+</resources>

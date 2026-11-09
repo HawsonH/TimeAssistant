@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quota_not_read">尚未读取来源快照</string>
+    <string name="quota_stale">历史快照 · 数据已过期或更新时间不明，请刷新</string>
+    <string name="quota_snapshot">来源快照 · 非实时余额</string>
+    <string name="quota_plan">计划：%1$s</string>
+    <string name="quota_observed">来源更新于 %1$s</string>
+    <string name="quota_windows_unknown">服务未返回额度窗口，不能推算剩余额度</string>
+    <string name="quota_limited">来源报告此额度受限；不等于整个计划耗尽</string>
+    <string name="quota_credits">Codex 积分余额：%1$s（不是金额）</string>
+    <string name="quota_reset_credits">来源报告重置次数：%1$d（只读，不自动使用）</string>
+    <string name="quota_scope_notice">账号窗口、单个应用限额与本机 Token 统计不同；以官方用量页面为准。</string>
+    <string name="quota_percent">剩余 %1$s%% · 已用 %2$s%%</string>
+    <string name="quota_percent_unknown">剩余比例未知</string>
+    <string name="quota_reset_unknown">重置时间未返回</string>
+    <string name="quota_reset_passed">快照重置时间 %1$s 已过；请刷新，不代表已恢复额度</string>
+    <string name="quota_reset_at">来源预计重置于 %1$s</string>
+    <string name="quota_primary">主要窗口 · 时长未知</string>
+    <string name="quota_secondary">次要窗口 · 时长未知</string>
+    <string name="quota_five_hour">5 小时窗口</string>
+    <string name="quota_week">每周窗口 · 7 天</string>
+    <string name="quota_duration">%1$s 小时窗口</string>
+    <string name="quota_unlimited">来源报告不设上限</string>
+    <string name="quota_credit_available">有可用积分，余额未返回</string>
+    <string name="quota_credit_unavailable">来源报告不可用，余额未返回</string>
+    <string name="quota_unknown">未知</string>
+    <string name="quota_official_unavailable">当前官方登录未提供可确认支持的额度直读接口，剩余比例与重置时间未知。请在官方用量页面查看本应用限额与计划用量；无需重新登录。</string>
+    <string name="oauth_login_help_title">登录帮助</string>
+    <string name="oauth_login_help_message">1. 在外部浏览器完成官方登录和授权。\n\n2. 若 127.0.0.1 页面超时或无法跳回，保留页面并复制地址栏中的完整地址；不要只复制端口或授权码。\n\n3. 返回时屿的 AI 连接与账号，点“完成浏览器授权”，粘贴并继续。处理时保持应用在前台。\n\n地址只粘贴到本机时屿，不要发到聊天、中转或反馈中。会话有效期为十分钟，已过期需重新登录；已登录或额度受限时无需反复授权。</string>
+    <string name="oauth_login_help_done">知道了</string>
+    <string name="oauth_login_help_paste">粘贴回调地址</string>
+    <string name="oauth_login_pending_notice">若浏览器超时或无法跳回，请复制完整地址，返回后点“完成浏览器授权”；步骤见“登录帮助”</string>
+    <string name="oauth_login_callback_message">从浏览器地址栏复制完整回调地址后粘贴到这里，不接受单独授权码。地址只在本机处理，不要发到聊天或中转。已过期请重新登录。</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.TimeAssistant.ConnectionInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/ui_radius_input</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/ui_radius_input</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/ui_radius_input</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/ui_radius_input</item>
+        <item name="boxBackgroundColor">@color/ui_surface</item>
+        <item name="boxStrokeColor">@color/ui_secondary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+    </style>
+</resources>

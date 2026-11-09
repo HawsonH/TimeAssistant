@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="accessibility_action_edit_task" type="id" />
+    <item name="accessibility_action_primary_task" type="id" />
+    <item name="accessibility_action_focus_task" type="id" />
+    <item name="themeSwatchCheck" type="id" />
+</resources>

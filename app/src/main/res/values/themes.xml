@@ -1,0 +1,103 @@
+<resources>
+    <style name="Theme.TimeAssistantBase" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorOnPrimary">@color/on_brand</item>
+        <item name="colorOnSecondary">@color/on_brand</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="android:colorAccent">?attr/colorPrimary</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.TimeAssistant.Dialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.TimeAssistant.Dialog</item>
+        <item name="materialButtonStyle">@style/Widget.TimeAssistant.MaterialButton</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.TimeAssistant.Sheet</item>
+    </style>
+
+    <style name="Theme.TimeAssistantViolet" parent="@style/Theme.TimeAssistantBase">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorBrandPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorBrandSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary</item>
+        <item name="colorPrimarySoft">@color/brand_primary_soft</item>
+        <item name="colorSecondarySoft">@color/brand_secondary_soft</item>
+        <item name="colorAppBackground">@color/app_background</item>
+        <item name="colorSegmentBackground">@color/segment_background</item>
+        <item name="colorInsight">@color/stats_blue</item>
+        <item name="colorInsightSoft">@color/stats_blue_soft</item>
+        <item name="colorCardBorder">@color/card_border</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:windowBackground">@color/app_background</item>
+    </style>
+
+    <style name="Theme.TimeAssistantOcean" parent="@style/Theme.TimeAssistantBase">
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorBrandPrimary">@color/ocean_primary</item>
+        <item name="colorPrimaryVariant">@color/ocean_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorBrandSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary</item>
+        <item name="colorPrimarySoft">@color/ocean_primary_soft</item>
+        <item name="colorSecondarySoft">@color/brand_secondary_soft</item>
+        <item name="colorAppBackground">@color/ocean_background</item>
+        <item name="colorSegmentBackground">@color/ocean_segment</item>
+        <item name="colorInsight">@color/ocean_primary</item>
+        <item name="colorInsightSoft">@color/ocean_primary_soft</item>
+        <item name="colorCardBorder">@color/ocean_border</item>
+        <item name="android:statusBarColor">@color/ocean_background</item>
+        <item name="android:windowBackground">@color/ocean_background</item>
+    </style>
+
+    <style name="Theme.TimeAssistantForest" parent="@style/Theme.TimeAssistantBase">
+        <item name="colorPrimary">@color/forest_primary</item>
+        <item name="colorBrandPrimary">@color/forest_primary</item>
+        <item name="colorPrimaryVariant">@color/forest_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorBrandSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary</item>
+        <item name="colorPrimarySoft">@color/forest_primary_soft</item>
+        <item name="colorSecondarySoft">@color/brand_secondary_soft</item>
+        <item name="colorAppBackground">@color/forest_background</item>
+        <item name="colorSegmentBackground">@color/forest_segment</item>
+        <item name="colorInsight">@color/forest_primary</item>
+        <item name="colorInsightSoft">@color/forest_primary_soft</item>
+        <item name="colorCardBorder">@color/forest_border</item>
+        <item name="android:statusBarColor">@color/forest_background</item>
+        <item name="android:windowBackground">@color/forest_background</item>
+    </style>
+
+    <style name="Theme.TimeAssistantClay" parent="@style/Theme.TimeAssistantBase">
+        <item name="colorPrimary">@color/clay_primary</item>
+        <item name="colorBrandPrimary">@color/clay_primary</item>
+        <item name="colorPrimaryVariant">@color/clay_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorBrandSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary</item>
+        <item name="colorPrimarySoft">@color/clay_primary_soft</item>
+        <item name="colorSecondarySoft">@color/brand_secondary_soft</item>
+        <item name="colorAppBackground">@color/clay_background</item>
+        <item name="colorSegmentBackground">@color/clay_segment</item>
+        <item name="colorInsight">@color/clay_primary</item>
+        <item name="colorInsightSoft">@color/clay_primary_soft</item>
+        <item name="colorCardBorder">@color/clay_border</item>
+        <item name="android:statusBarColor">@color/clay_background</item>
+        <item name="android:windowBackground">@color/clay_background</item>
+    </style>
+
+    <style name="Theme.TimeAssistantNeutral" parent="@style/Theme.TimeAssistantViolet">
+        <item name="colorPrimary">@color/neutral_primary</item>
+        <item name="colorBrandPrimary">@color/neutral_primary</item>
+        <item name="colorPrimaryVariant">@color/neutral_primary_dark</item>
+        <item name="colorPrimarySoft">@color/neutral_primary_soft</item>
+        <item name="colorInsight">@color/neutral_primary</item>
+        <item name="colorInsightSoft">@color/neutral_primary_soft</item>
+    </style>
+    <style name="Theme.TimeAssistant" parent="@style/Theme.TimeAssistantNeutral" />
+</resources>

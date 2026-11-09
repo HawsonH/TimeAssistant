@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="neutral_primary">#0064CC</color>
+    <color name="neutral_primary_dark">#0052A8</color>
+    <color name="neutral_primary_soft">#EAF2FC</color>
+    <color name="warning">#865211</color>
+    <color name="warning_soft">#FFF2E2</color>
+    <color name="brand_primary">#5B5BD6</color>
+    <color name="brand_primary_dark">#4848B7</color>
+    <color name="brand_secondary">#147D50</color>
+    <color name="app_background">@color/ui_background</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="on_brand">#FFFFFFFF</color>
+    <color name="text_primary">@color/ui_text</color>
+    <color name="text_secondary">@color/ui_secondary</color>
+    <color name="border">@color/ui_border</color>
+    <color name="brand_primary_soft">#ECECFA</color>
+    <color name="brand_secondary_soft">#E5F4F0</color>
+    <color name="segment_background">#EBEBEF</color>
+    <color name="button_neutral">#EBEBEF</color>
+    <color name="danger">#B43D3D</color>
+    <color name="danger_soft">#FFE8E8</color>
+    <color name="stats_blue">#5B5BD6</color>
+    <color name="stats_blue_soft">#ECECFA</color>
+    <color name="card_border">@color/ui_border</color>
+
+    <color name="ocean_primary">#3568C8</color>
+    <color name="ocean_primary_dark">#2D55A0</color>
+    <color name="ocean_secondary">#2C9C92</color>
+    <color name="ocean_background">@color/ui_background</color>
+    <color name="ocean_primary_soft">#E7EFFC</color>
+    <color name="ocean_secondary_soft">#E5F5F2</color>
+    <color name="ocean_segment">@color/segment_background</color>
+    <color name="ocean_border">@color/ui_border</color>
+
+    <color name="forest_primary">#326A55</color>
+    <color name="forest_primary_dark">#2D6350</color>
+    <color name="forest_secondary">#C07B42</color>
+    <color name="forest_background">@color/ui_background</color>
+    <color name="forest_primary_soft">#E7F1ED</color>
+    <color name="forest_secondary_soft">#F8EEE5</color>
+    <color name="forest_segment">@color/segment_background</color>
+    <color name="forest_border">@color/ui_border</color>
+
+    <color name="clay_primary">#984E3E</color>
+    <color name="clay_primary_dark">#934B3C</color>
+    <color name="clay_secondary">#8064B4</color>
+    <color name="clay_background">@color/ui_background</color>
+    <color name="clay_primary_soft">#F8E9E5</color>
+    <color name="clay_secondary_soft">#EEE8F7</color>
+    <color name="clay_segment">@color/segment_background</color>
+    <color name="clay_border">@color/ui_border</color>
+</resources>

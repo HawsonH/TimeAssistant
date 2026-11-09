@@ -1,0 +1,4 @@
+<resources>
+    <item name="motion_state" type="id" />
+    <item name="content_transition_state" type="id" />
+</resources>

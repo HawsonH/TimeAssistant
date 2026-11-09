@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBrandPrimary" format="color" />
+    <attr name="colorBrandSecondary" format="color" />
+    <attr name="colorPrimarySoft" format="color" />
+    <attr name="colorSecondarySoft" format="color" />
+    <attr name="colorAppBackground" format="color" />
+    <attr name="colorSegmentBackground" format="color" />
+    <attr name="colorInsight" format="color" />
+    <attr name="colorInsightSoft" format="color" />
+    <attr name="colorCardBorder" format="color" />
+</resources>

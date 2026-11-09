@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.TimeAssistant.ConnectionInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="连接名称" android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:inputType="textCapSentences" android:maxLength="80" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/urlLayout"
+        style="@style/Widget.TimeAssistant.ConnectionInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="服务地址" android:layout_marginTop="12dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/url"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:inputType="textUri|textMultiLine" android:maxLines="4"
+            android:scrollHorizontally="false" android:imeOptions="actionDone|flagNoExtractUi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/protocolLayout"
+        style="@style/Widget.TimeAssistant.ConnectionInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="请求协议" android:layout_marginTop="12dp"
+        app:endIconMode="dropdown_menu">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/protocol"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/keyLayout"
+        style="@style/Widget.TimeAssistant.ConnectionInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="API Key" android:layout_marginTop="12dp" app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/key"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:inputType="textPassword"
+            android:importantForAutofill="no" android:saveEnabled="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.TimeAssistant.ConnectionInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/modelLayout" android:hint="模型" android:layout_marginTop="12dp"
+        app:endIconMode="custom" app:endIconDrawable="@android:drawable/arrow_down_float" app:endIconContentDescription="选择模型">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/model"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:inputType="text|textMultiLine" android:maxLines="3"
+            android:scrollHorizontally="false" android:imeOptions="actionDone|flagNoExtractUi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/models"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="end" android:minHeight="48dp" android:text="获取模型"
+        android:textAllCaps="false" android:letterSpacing="0" />
+    <TextView android:id="@+id/status" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingTop="8dp" android:paddingBottom="8dp"
+        android:textSize="14sp" android:accessibilityLiveRegion="polite" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/save"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:minHeight="48dp" android:text="保存连接"
+        android:textAllCaps="false" android:letterSpacing="0" app:cornerRadius="@dimen/ui_radius_action" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/test"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:minHeight="48dp" android:text="更多操作"
+        android:textAllCaps="false" android:letterSpacing="0" app:cornerRadius="@dimen/ui_radius_action" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:minHeight="48dp" android:text="返回连接列表"
+        android:textAllCaps="false" android:letterSpacing="0" />
+</LinearLayout>
